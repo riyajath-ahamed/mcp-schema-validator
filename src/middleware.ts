@@ -4,7 +4,7 @@
  *
  * @example
  * ```ts
- * import { compose, withValidation, withRateLimit, withAuditLog } from "@configkits/mcp-schema-validator";
+ * import { compose, withValidation, withRateLimit, withAuditLog } from "mcp-schema-validator";
  *
  * const wrapped = compose(
  *   withValidation(registry, { mode: "strict" }),

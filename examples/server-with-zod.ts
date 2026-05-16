@@ -20,7 +20,7 @@ import {
   withLogger,
   withRateLimit,
   withAuditLog,
-} from "@configkits/mcp-schema-validator";
+} from "mcp-schema-validator";
 
 // ─── 1. Define schemas once ───────────────────────────────────────────────────
 

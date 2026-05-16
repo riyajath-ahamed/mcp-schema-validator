@@ -1,6 +1,6 @@
 /**
  * mcp-schema-validator — Runtime schema validation middleware for MCP tool inputs/outputs
- * @configkits/mcp-schema-validator
+ * mcp-schema-validator
  *
  * Compatible with the Standard Schema interface (Zod v3/v4, Valibot, ArkType)
  */
@@ -119,7 +119,7 @@ function buildErrorResponse(
  *
  * @example
  * ```ts
- * import { withValidation } from "@configkits/mcp-schema-validator";
+ * import { withValidation } from "mcp-schema-validator";
  * import { z } from "zod";
  *
  * const registry = {

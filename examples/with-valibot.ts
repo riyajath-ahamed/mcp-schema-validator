@@ -4,7 +4,7 @@
  */
 
 import * as v from "valibot";
-import { createRegistry, withValidation } from "@configkits/mcp-schema-validator";
+import { createRegistry, withValidation } from "mcp-schema-validator";
 
 const registry = createRegistry()
   .register("translate", {
