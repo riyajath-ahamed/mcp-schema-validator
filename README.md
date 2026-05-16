@@ -1,8 +1,8 @@
-# @configkits/mcp-schema-validator
+# mcp-schema-validator
 
 > Runtime schema validation middleware for MCP tool inputs and outputs.
 
-[![npm version](https://img.shields.io/npm/v/@configkits/mcp-schema-validator)](https://www.npmjs.com/package/@configkits/mcp-schema-validator)
+[![npm version](https://img.shields.io/npm/v/mcp-schema-validator)](https://www.npmjs.com/package/mcp-schema-validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Standard Schema](https://img.shields.io/badge/Standard%20Schema-compatible-blue)](https://standardschema.dev)
 
@@ -25,7 +25,7 @@ MCP tool schemas are declared but rarely validated at runtime. Malformed LLM inp
 ## Installation
 
 ```bash
-npm install @configkits/mcp-schema-validator
+npm install mcp-schema-validator
 # peer deps
 npm install @standard-schema/spec
 # pick your schema library
@@ -40,7 +40,7 @@ npm install zod          # or valibot, or arktype
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { CallToolRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
-import { createRegistry, withValidation } from "@configkits/mcp-schema-validator";
+import { createRegistry, withValidation } from "mcp-schema-validator";
 
 // 1. Declare schemas once - TypeScript types inferred automatically
 const registry = createRegistry()
@@ -94,7 +94,7 @@ const schema = type({ query: "string" });
 ## Middleware Composition
 
 ```ts
-import { compose, withLogger, withRateLimit, withAuditLog } from "@configkits/mcp-schema-validator";
+import { compose, withLogger, withRateLimit, withAuditLog } from "mcp-schema-validator";
 
 const pipeline = compose(
   withLogger(),

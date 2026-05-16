@@ -1,5 +1,5 @@
 {
-  "name": "@configkits/mcp-schema-validator",
+  "name": "mcp-schema-validator",
   "version": "0.1.0",
   "description": "Runtime schema validation middleware for MCP tool inputs and outputs. Compatible with Zod, Valibot, ArkType.",
   "keywords": [
@@ -20,10 +20,10 @@
   "homepage": "https://configkits.dev/mcp-schema-validator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/configkits/mcp-schema-validator"
+    "url": "https://github.com/riyajath-ahamed/mcp-schema-validator"
   },
   "bugs": {
-    "url": "https://github.com/configkits/mcp-schema-validator/issues"
+    "url": "https://github.com/riyajath-ahamed/mcp-schema-validator/issues"
   },
   "type": "module",
   "main": "./dist/index.cjs",
